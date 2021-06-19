@@ -1,0 +1,34 @@
+.footer {
+  background-color: #142328;
+  color: #fff;
+  height: 38vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .logo {
+    font-size: 20px;
+    display: block;
+  }
+  .description {
+    color: #556268;
+    font-size: 14px;
+    padding: 5px 0;
+  }
+  .social {
+    color: #556268;
+    font-size: 34px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    width: 156px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .description {
+    width: 260px;
+    word-wrap: break-word;
+  }
+}

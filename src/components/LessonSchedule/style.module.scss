@@ -1,0 +1,17 @@
+@import "../../theme/variables.scss";
+.date {
+  background: #eee;
+  color: #757575;
+}
+
+.dateActive {
+  background: $headerBottom;
+  color: #fff;
+}
+
+.dateBase {
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 13px;
+}

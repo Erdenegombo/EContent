@@ -1,0 +1,97 @@
+.classLinks {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.classLevel {
+  padding: 0 6vw;
+  padding-top: 1vh;
+  padding-bottom: 6vh;
+}
+.link {
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+  background-color: #f8f8f8;
+  border-radius: 2px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activeLink {
+  background-color: #ff6937;
+  color: #fff;
+}
+
+.lessonsContainer {
+  background-color: #f8f8f8;
+  padding: 0 7vw;
+  border-color: transparent transparent #000 transparent;
+  border-top-left-radius: 13% 10%;
+}
+
+.lessonsList {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+.lessonLink {
+  text-decoration: none;
+  color: #4f4f4f;
+  background: #fff;
+  border: 2px solid #f8f8f8;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  //width: 100%;
+  padding: 0 20px;
+  //max-width: 250px;
+  min-width: 218px;
+}
+
+.lessonName {
+  padding-left: 20px;
+  color: #585858 !important;
+}
+
+.schedules {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media screen and (max-width: 770px) {
+  .link {
+    margin-bottom: 1vh;
+  }
+  .lessonsContainer {
+    border-top-left-radius: 40px;
+  }
+  .lessonLink {
+    min-width: 120px;
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 6px;
+  }
+  .lessonName {
+    padding-left: 10px;
+    width: 90px;
+    word-wrap: break-word;
+  }
+  .lessonsList {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+  .schedules {
+    grid-template-columns: 1fr;
+  }
+}

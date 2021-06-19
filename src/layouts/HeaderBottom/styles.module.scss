@@ -1,0 +1,93 @@
+@import "../../theme/variables.scss";
+
+.headerBottom {
+  background-color: $headerBottom;
+  display: flex;
+  //padding: 2vh;
+  padding: 11px 7vw;
+}
+
+.container {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    font-size: 22px;
+    padding-right: 2.2rem;
+  }
+}
+
+.links,
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linksContainer {
+  display: flex;
+  div {
+    padding: 0 18px;
+  }
+}
+.searchInput {
+  background-color: white;
+  border-radius: 0.25rem;
+  display: flex;
+  input {
+    border-radius: 0.25rem;
+    padding: 13px 22px;
+    border: 0;
+    height: 100%;
+    width: 20vw;
+  }
+  input::placeholder {
+    opacity: 0.6;
+    font-size: 0.9rem;
+  }
+  input:focus {
+    outline: none;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 0;
+    padding: 0 1rem;
+    border-radius: 0.25rem;
+    font-size: large;
+    color: rgb(128, 128, 128);
+  }
+  button:hover {
+    background-color: rgb(250, 250, 250);
+  }
+}
+
+.login {
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 13px 22px;
+  font-size: 14px;
+  color: #156a41;
+  margin-left: 2rem;
+  background: #fff;
+}
+
+.link {
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 13px;
+}
+.activeLink {
+  background-color: $headerTop;
+}
+
+@media screen and (max-width: 770px) {
+  .headerBottom {
+    display: none;
+  }
+}
